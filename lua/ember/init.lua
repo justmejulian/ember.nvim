@@ -16,6 +16,7 @@ function M.setup(opts)
 
   M.get_related_files = function()
     tools.get_related_files(picker)
+    tools.get_kind_usages(picker)
   end
 end
 

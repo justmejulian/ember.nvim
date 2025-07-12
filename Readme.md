@@ -34,21 +34,18 @@ Inspired by [Ember VSCode Extension](https://github.com/ember-tooling/vscode-emb
 
 The plugin exposes both commands and functions.
 
-### Commands
+- `EmberGetRelatedFiles` / `get_related_files`
+    - Get related files for the current Ember.js file.
+- `EmberGetKindUsages` / `get_kind_usages`
+    - Get usages of the current Ember.js file
 
-- `EmberGetRelatedFiles` - Get related files for the current Ember.js file.
-
-#### Example Usage
+#### Commands Example Usage
 
 ```
 :EmberGetRelatedFiles
 ```
 
-### Functions
-
-- `get_related_files` - Get related files for the current Ember.js file.
-
-#### Example Usage
+#### Functions Example Usage
 
 ```lua
 -- Add to your keymaps
