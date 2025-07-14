@@ -49,8 +49,6 @@ function M.get_kind_usages(picker)
       return
     end
 
-    vim.notify(vim.inspect(results.usages), vim.log.levels.DEBUG)
-
     local usages = {}
 
     for _, usage in ipairs(results.usages) do
