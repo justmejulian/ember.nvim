@@ -7,6 +7,9 @@ Make sure you already have the [Ember Language Server](https://github.com/emberw
 
 Inspired by [Ember VSCode Extension](https://github.com/ember-tooling/vscode-ember)
 
+<img width="1379" height="888" alt="Image" src="https://github.com/user-attachments/assets/07d8aeee-d4c0-4e1d-a457-16d1007cf9ce" />
+<img width="1379" height="888" alt="Image" src="https://github.com/user-attachments/assets/835f7546-664f-4b82-ba86-e1617d2e548e" />
+
 ## Features
 
 - Navigate between related files in your Ember.js project
