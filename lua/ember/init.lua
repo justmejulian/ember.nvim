@@ -15,8 +15,15 @@ function M.setup(opts)
   commands.register_commands(picker)
 
   M.get_related_files = function()
-    tools.get_related_files(picker)
-    tools.get_kind_usages(picker)
+    tools.get_related_files(function(results)
+      picker('Related Files', results)
+    end)
+  end
+
+  M.get_kind_usages = function()
+    tools.get_kind_usages(function(results)
+      picker('Kind Usages', results)
+    end)
   end
 end
 

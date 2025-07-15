@@ -52,6 +52,10 @@ The plugin exposes both commands and functions.
 
 ```lua
 -- Add to your keymaps
-vim.keymap.set('n', '<leader>er', require('ember').get_related_files, { desc = 'Ember Related Files' })
+vim.keymap.set('n', '<leader>er',
+    function()
+        require('ember').get_related_files()
+    end, 
+    { desc = 'Ember Get Related Files' })
 
 ```

@@ -25,7 +25,7 @@ function M.get_related_files(picker)
       end
     end
 
-    picker(results)
+    picker(file_names)
   end)
 end
 
