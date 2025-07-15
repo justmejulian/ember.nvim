@@ -1,7 +1,7 @@
 # Ember.nvim
 
 Tools to enhance development with Ember.js in Neovim.
-You don't this plugin to use Ember.js in Neovim, but it implements some of the features that are not part of the standard LSP protocol.
+You don't need this plugin to use Ember.js in Neovim, but it implements some of the features that are not part of the standard LSP protocol.
 
 Make sure you already have the [Ember Language Server](https://github.com/emberwatch/ember-language-server) installed and running in your project.
 
