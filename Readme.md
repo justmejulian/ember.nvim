@@ -18,7 +18,7 @@ Inspired by [Ember VSCode Extension](https://github.com/ember-tooling/vscode-emb
 ## Requirements
 
 - [Ember Language Server](https://github.com/emberwatch/ember-language-server)
-- [Snacks.nvim](https://github.com/echasnovski/snacks.nvim) (optional, for enhanced picking experience)
+- [Snacks.nvim](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md) (optional, for enhanced picking experience)
 
 ## Installation
 
