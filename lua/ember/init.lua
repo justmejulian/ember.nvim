@@ -21,8 +21,8 @@ function M.setup(opts)
   end
 
   M.get_kind_usages = function()
-    tools.get_kind_usages(function(results)
-      picker('Kind Usages', results)
+    tools.get_kind_usages(function(results, search)
+      picker('Kind Usages', results, search)
     end)
   end
 end

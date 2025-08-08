@@ -30,9 +30,10 @@ function M.get_related_files(picker)
 end
 
 --- Get usages of the current kind using LSP and open a picker with the results.
---- @param picker fun(items: table<string>): nil Function to open a picker with the results
+--- @param picker fun(items: table<string>, search: string | nil): nil Function to open a picker with the results
 function M.get_kind_usages(picker)
   local file_path = utils.get_absolute_path()
+  local relative_file_path = utils.get_relative_path()
 
   local params = {
     command = 'els.getKindUsages',
@@ -57,7 +58,9 @@ function M.get_kind_usages(picker)
       end
     end
 
-    picker(usages)
+    local component_name = utils.get_component_name(relative_file_path)
+
+    picker(usages, component_name)
   end)
 end
 

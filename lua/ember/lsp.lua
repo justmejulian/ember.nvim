@@ -17,7 +17,7 @@ function M.execute_command(params, callback)
 
   vim.lsp.buf_request(0, 'workspace/executeCommand', params, function(err, results)
     if err then
-      vim.notify('Error: ' .. err.message, vim.log.levels.ERROR)
+      -- vim.notify('Error: ' .. err.message, vim.log.levels.ERROR)
       return
     end
 

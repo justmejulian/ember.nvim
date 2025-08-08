@@ -17,12 +17,12 @@ local function register_get_related_files(picker, buf)
 end
 
 --- Register a command to get usages of the current kind.
---- @param picker fun(title: string, items: table<string>): nil
+--- @param picker fun(title: string, items: table<string>, search: string | nil): nil
 --- @param buf number Buffer number where the command will be registered
 local function register_get_kind_usages(picker, buf)
   vim.api.nvim_buf_create_user_command(buf, 'EmberGetKindUsages', function()
-    tools.get_kind_usages(function(results)
-      picker('Kind Usages', results)
+    tools.get_kind_usages(function(results, search)
+      picker('Kind Usages', results, search)
     end)
   end, {
     desc = 'Get usages of the current kind',
