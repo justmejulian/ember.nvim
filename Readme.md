@@ -13,12 +13,13 @@ Inspired by [Ember VSCode Extension](https://github.com/ember-tooling/vscode-emb
 ## Features
 
 - Navigate between related files in your Ember.js project
-    - Quickfix list or Snacks.nvim picker
+    - Quickfix list, Telescope or Snacks.nvim picker
 
 ## Requirements
 
 - [Ember Language Server](https://github.com/emberwatch/ember-language-server)
-- [Snacks.nvim](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md) (optional, for enhanced picking experience)
+- [Snacks.nvim](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md) or
+[Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (optional, for enhanced picking experience)
 
 ## Installation
 
@@ -28,7 +29,7 @@ Inspired by [Ember VSCode Extension](https://github.com/ember-tooling/vscode-emb
 {
   'justmejulian/ember.nvim',
   opts = {
-    picker = 'quickfix', -- 'quickfix' (default) or 'snacks.picker'
+    picker = 'quickfix', -- 'quickfix' (default), 'telescope' or 'snacks.picker'
   },
 }
 ```
@@ -55,7 +56,7 @@ The plugin exposes both commands and functions.
 vim.keymap.set('n', '<leader>er',
     function()
         require('ember').get_related_files()
-    end, 
+    end,
     { desc = 'Ember Get Related Files' })
 
 ```
