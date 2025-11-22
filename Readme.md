@@ -28,7 +28,7 @@ Inspired by [Ember VSCode Extension](https://github.com/ember-tooling/vscode-emb
 {
   'justmejulian/ember.nvim',
   opts = {
-    picker = 'quickfix', -- 'quickfix' (default) or 'snacks.picker'
+    picker = 'quickfix', -- 'quickfix' (default), 'telescope' or 'snacks.picker'
   },
 }
 ```
